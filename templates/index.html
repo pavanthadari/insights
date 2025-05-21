@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Insight App</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <h1>Understand your customers like never before with AI-powered analytics.</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="datafile" />
+    <button type="submit">Upload & Analyze</button>
+  </form>
+  <div id="chat-widget">
+    <input type="text" id="chat-input" placeholder="Ask InsightBot..." />
+    <button onclick="sendChat()">Send</button>
+    <div id="chat-history"></div>
+  </div>
+  <script src="/static/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <h2>Dashboard</h2>
+  <h3>Insights</h3>
+  <pre>{{ insights }}</pre>
+  <h3>Visuals</h3>
+  {% for img in visuals %}
+    <img src="{{ img }}" />
+  {% endfor %}
+  <h3>Strategies</h3>
+  <pre>{{ strategies }}</pre>
+  <h3>KPIs</h3>
+  <pre>{{ kpis }}</pre>
+  <h3>Correlations</h3>
+  <pre>{{ correlations }}</pre>
+  <h3>Impact Summary</h3>
+  <pre>{{ impact }}</pre>
+  <h3>Automation Opportunities</h3>
+  <pre>{{ automation }}</pre>
+</body>
+</html>
