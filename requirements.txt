@@ -1,6 +1,14 @@
+# Step 1: Install core build tools FIRST
+cython
+numpy
+pystan==2.19.1.1
+
+# Step 2: Prophet after dependencies
+prophet
+
+# Step 3: All your other dependencies
 Flask
 pandas
-numpy
 scikit-learn
 matplotlib
 plotly
@@ -10,11 +18,7 @@ nltk
 spacy
 xlrd
 openpyxl
-opencv-python
-pyzbar
-pytesseract
+opencv-python-headless
 statsmodels
-pystan==2.19.1.1
-prophet
 shap
 lime
