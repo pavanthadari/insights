@@ -1,12 +1,3 @@
-# Step 1: Install core build tools FIRST
-cython
-numpy
-pystan==2.19.1.1
-
-# Step 2: Prophet after dependencies
-prophet
-
-# Step 3: All your other dependencies
 Flask
 pandas
 scikit-learn
